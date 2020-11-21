@@ -1,0 +1,11 @@
+1. Minimum RTO for a single AZ outage
+	This is the time it takes to start up a new RDS instance in a new AZ. In this case, I estimate it to be about 1-2 minutes
+	
+2. Minimum RTO for a single region outage
+        This will be the time it takes to switch to the read replica in another region. I estimate it to be about 5 - 10 minutes
+
+3. Minimum RPO for a single AZ outage
+	RPO is 0 because data loss is minimised as the system fails over from one instance to another		 
+
+4. Minimum RPO for a single region outage
+	RPO is 0 because read replication is asynchronous.
